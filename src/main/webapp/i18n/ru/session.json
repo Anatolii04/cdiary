@@ -1,0 +1,25 @@
+{
+  "cdiaryApp": {
+    "session": {
+      "home": {
+        "title": "Sessions",
+        "createLabel": "Создать новый Session",
+        "createOrEditLabel": "Создать или отредактировать Session",
+        "notFound": "No Session found"
+      },
+      "created": "Новый Session создан с идентификатором {{ param }}",
+      "updated": "Session обновлен с идентификатором {{ param }}",
+      "deleted": "Session удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Session {{ id }}?"
+      },
+      "detail": {
+        "title": "Session"
+      },
+      "thoughts": "Thoughts",
+      "date": "Date",
+      "project": "Project",
+      "tag": "Tag"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "cdiaryApp": {
+    "Status": {
+      "null": "",
+      "REDPOINT": "REDPOINT",
+      "FLASH": "FLASH",
+      "INPROGRESS": "INPROGRESS",
+      "ONSIGHT": "ONSIGHT"
+    }
+  }
+}

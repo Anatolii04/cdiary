@@ -1,0 +1,39 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="project">
+            <h2><span jhiTranslate="cdiaryApp.project.detail.title">Project</span> {{project.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="cdiaryApp.project.name">Name</span></dt>
+                <dd>
+                    <span>{{project.name}}</span>
+                </dd>
+                <dt><span jhiTranslate="cdiaryApp.project.grade">Grade</span></dt>
+                <dd>
+                    <span>{{project.grade}}</span>
+                </dd>
+                <dt><span jhiTranslate="cdiaryApp.project.status">Status</span></dt>
+                <dd>
+                    <span jhiTranslate="{{'cdiaryApp.Status.' + project.status}}">{{project.status}}</span>
+                </dd>
+                <dt><span jhiTranslate="cdiaryApp.project.user">User</span></dt>
+                <dd>
+                    {{project.user?.login}}
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/project', project.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>
